@@ -7,6 +7,7 @@
 
 ![](https://img.shields.io/badge/cool-useless-green.svg)
 [![CRAN](https://www.r-pkg.org/badges/version/feck)](https://CRAN.R-project.org/package=feck)
+[![R-CMD-check](https://github.com/coolbutuseless/feck/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/coolbutuseless/feck/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 `{feck}` is an R package for generating forward error correction codes -
