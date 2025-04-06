@@ -1,0 +1,25 @@
+Package: feck
+Type: Package
+Title: Forward Error Correction and Erasure Coding
+Version: 1.0.0
+Authors@R: c(
+    person("Mike", "Cheng", role = c("aut", "cre", 'cph'), email = "mikefc@coolbutuseless.com"),
+    person("Zooko", "O'Whielacronx", role = c("aut", "cph"), email = "zooko@zooko.com", comment = "zfec author"),
+    person("Luigi", "Rizzo", role = c("aut", "cph"), email = "luigi@iet.unipi.it", comment = "Author of original 'fec.c' code"),
+    person("Phil", "Karn", role = c("ctb"), email = "karn@ka9q.ampr.org", comment = "zfec contributor"),
+    person("Robert", "Morelos-Zaragoza", role = c("ctb"), email = "robert@spectra.eng.hawaii.edu", comment = "zfec contributor"),
+    person("Dan", "Rubenstein", role = c("ctb"), email = "drubenst@cs.umass.edu", comment = "zfec contributor")
+    )
+Maintainer: Mike Cheng <mikefc@coolbutuseless.com>
+URL: https://github.com/coolbutuseless/feck
+BugReports: https://github.com/coolbutuseless/feck/issues
+Description: Forward error correction and erasure coding.  Repair damaged files
+    using pre-generated repair blocks.
+License: MIT + file LICENSE
+Encoding: UTF-8
+RoxygenNote: 7.3.2
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Copyright: See 'inst/COPYRIGHTS' file for original license for included code
+    from 'zfec'
