@@ -8,6 +8,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <assert.h>
+#include <stdint.h>  // for uintptr_t
 
 /*
  * Primitive polynomials - see Lin & Costello, Appendix A,
