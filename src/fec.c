@@ -422,7 +422,7 @@ fec_init (void) {
 
 void
 fec_free (fec_t *p) {
-    assert (p != NULL && p->magic == (((FEC_MAGIC ^ p->k) ^ p->n) ^ (unsigned long) (p->enc_matrix)));
+    assert (p != NULL && p->magic == (((FEC_MAGIC ^ p->k) ^ p->n) ^ (uintptr_t) (p->enc_matrix)));
     free (p->enc_matrix);
     free (p);
 }
@@ -447,7 +447,7 @@ fec_new(unsigned short k, unsigned short n) {
     retval->k = k;
     retval->n = n;
     retval->enc_matrix = NEW_GF_MATRIX (n, k);
-    retval->magic = ((FEC_MAGIC ^ k) ^ n) ^ (unsigned long) (retval->enc_matrix);
+    retval->magic = ((FEC_MAGIC ^ k) ^ n) ^ (uintptr_t) (retval->enc_matrix);
     tmp_m = NEW_GF_MATRIX (n, k);
     /*
      * fill the matrix with powers of field elements, starting from 0.
